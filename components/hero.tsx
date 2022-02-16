@@ -11,7 +11,7 @@ const Hero = () => {
           <Image title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" />
         </div>
       </div>
-      <div className=" mt-8 flex items-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
+      <div className=" mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
         <div className="mt-3 flex flex-col items-center lg:items-start pb-24" >
           <h1 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey">I Write<br /> Quality Code.</h1>
           <button className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold">Get in touch</button>
