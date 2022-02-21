@@ -10,7 +10,7 @@ const Hero = () => {
     tl.from('#hero-image', {
       opacity: 0,
       duration:0.5
-    })
+    },"+=0.5")
 
     
     tl.from('#hero-text', {
