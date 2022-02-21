@@ -40,7 +40,7 @@ const Home: NextPage = ({posts}:any) => {
 export default Home;
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
   const files = fs.readdirSync(path.join('md/works'))
 
