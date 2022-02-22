@@ -1,7 +1,7 @@
 ---
 title: 'Billocity'
 date: 'March 5, 2021'
-excerpt: 'Django is a very powerful, high level Python framework for building web applications'
+excerpt: 'A laravel based invoicing system'
 cover_image: '/works/billocity.jpg'
 ---
 
