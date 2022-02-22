@@ -7,23 +7,23 @@ const Hero = () => {
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { ease: "power1.inOut" } });
-    tl.from('#hero-image', {
-      opacity: 0,
+    tl.to('#hero-image', {
+      opacity: 1,
       duration:0.5
     },"+=0.5")
 
     
-    tl.from('#hero-text', {
-      opacity:0,
+    tl.to('#hero-text', {
+      opacity:1,
       duration: 0.5,
     },'-=0.3' )
-    tl.from('#cta', {
-      opacity:0,
+    tl.to('#cta', {
+      opacity:1,
       duration: 0.5,
     },'-=0.3' )
 
-    tl.from('#soc', {
-      opacity:0,
+    tl.to('#soc', {
+      opacity:1,
       duration: 0.5,
     },'-=0.3' )
   }, []);
@@ -32,14 +32,14 @@ const Hero = () => {
     <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 ">
       <div className=" h-full flex flex-col justify-end lg:row-start-1 lg:col-start-7 lg:col-end-12">
         <div style={{ width: '100%', height: '90%', position: 'relative' }}>
-          <Image id='hero-image' title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" />
+          <Image id='hero-image' className='opacity-0' title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" />
         </div>
       </div>
       <div className=" mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
         <div className="mt-3 flex flex-col items-center lg:items-start pb-24" >
-          <h1 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white" id='hero-text'>I Write<br /> Quality Code.</h1>
-          <button id='cta' className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold">Get in touch</button>
-          <div id='soc' className="flex gap-12 mt-8 dark:text-white">
+          <h1 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0" id='hero-text'>I Write<br /> Quality Code.</h1>
+          <button id='cta' className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold opacity-0">Get in touch</button>
+          <div id='soc' className="flex gap-12 mt-8 dark:text-white opacity-0">
             <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 22.0268V18.1568C15.0375 17.68 14.9731 17.2006 14.811 16.7506C14.6489 16.3006 14.3929 15.8902 14.06 15.5468C17.2 15.1968 20.5 14.0068 20.5 8.54679C20.4997 7.15062 19.9627 5.80799 19 4.79679C19.4559 3.5753 19.4236 2.22514 18.91 1.02679C18.91 1.02679 17.73 0.676793 15 2.50679C12.708 1.88561 10.292 1.88561 8 2.50679C5.27 0.676793 4.09 1.02679 4.09 1.02679C3.57638 2.22514 3.54414 3.5753 4 4.79679C3.03013 5.81549 2.49252 7.17026 2.5 8.57679C2.5 13.9968 5.8 15.1868 8.94 15.5768C8.611 15.9168 8.35726 16.3222 8.19531 16.7667C8.03335 17.2112 7.96681 17.6849 8 18.1568V22.0268M8 19.0268C3 20.5268 3 16.5268 1 16.0268L8 19.0268Z" stroke="#797979" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
