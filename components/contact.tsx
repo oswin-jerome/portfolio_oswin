@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="container mx-auto relative pt-28  px-4 lg:px-0">
       <p className="absolute text-[16vw] lg:text-[15vw] font-extrabold top-10 lg:top-0 -z-10 text-accent opacity-20 dark:opacity-30">Contact Me</p>
-      <h1 className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-2/4 dark:text-white">Share your Queries & Feedback.</h1>
+      <h2 className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-2/4 dark:text-white">Share your Queries & Feedback.</h2>
 
       <div className="grid grid-cols-2  mt-8 lg:mt-28">
         <div className="  justify-center items-start  hidden lg:flex ">

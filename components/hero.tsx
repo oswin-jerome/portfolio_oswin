@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       <div className=" mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
         <div className="mt-3 flex flex-col items-center lg:items-start pb-24" >
-          <h1 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0" id='hero-text'>I Write<br /> Quality Code.</h1>
+          <h2 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0" id='hero-text'>I Write<br /> Quality Code.</h2>
           <button id='cta' className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold opacity-0">Get in touch</button>
           <div id='soc' className="flex gap-12 mt-8 dark:text-white opacity-0">
             <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
