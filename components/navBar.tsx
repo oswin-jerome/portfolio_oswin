@@ -13,7 +13,7 @@ const NavBar = ()=>{
                 <path d="M3 18H21" stroke="#7A7A7A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
 
-            <ul className='gap-11 hidden md:flex'>
+            <ul className='gap-11 hidden md:flex dark:text-white'>
                 <li>
                     <Link href="/">
                     <a className='text-accent' >Home</a>

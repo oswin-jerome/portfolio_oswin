@@ -13,6 +13,7 @@ import path from "path";
 import matter from "gray-matter";
 import fs from "fs";
 import { useEffect } from "react";
+import SeoHead from "../components/seoHead";
 const Home: NextPage = ({posts}:any) => {
 
   useEffect(()=>{
@@ -20,9 +21,8 @@ const Home: NextPage = ({posts}:any) => {
   },[posts]);
   return (
     <div>
-      <Head>
-        <title>Oswin Jerome</title>
-      </Head>
+      
+      <SeoHead image="/oswin.png" url="https://oswinjerome.in/" title="Oswin Jerome" description="Hey I'm Oswin Jerome, I have 5 years of experience in programing. I'm specialized in Websites, Web Apps, Android Apps and lot more. I'm always eager to learn new technalogies and I have a deep knowledge in latest technalogies and frameworks" />
       <Hero/>
       <About/>
       <RecentWorks posts={posts}/>
@@ -30,9 +30,7 @@ const Home: NextPage = ({posts}:any) => {
       <Feedback/>
       <Social/>
       <Contact/>
-      <footer className="mt-12 h-20 bg-accent">
-
-      </footer>
+    
     </div>
   );
 };

@@ -5,19 +5,23 @@ import matter from 'gray-matter'
 import path from 'path'
 import Head from 'next/head'
 import {Marked} from '@ts-stack/markdown'
+import SeoHead from '../../components/seoHead'
 const WorkPage = ({
-    frontmatter: { title, date, cover_image },
+    frontmatter: { title, date, cover_image,excerpt  },
     slug,
     content,
   }:any) => {
     return ( 
         <div>
-            <Head>
-                <title>{title}</title>
-            </Head>
+            <SeoHead
+              image="cover_image"
+              title={title}
+              description={excerpt}
+              url={`https://oswinjerome.in/works/${slug}`}
+            />
             <div className='post container mx-auto mt-6 p-8'>
                 {/* <h1 className='text-4xl font-bold mb-5'>{title}</h1> */}
-                <div className='markdown prose prose-h1:text-accent' dangerouslySetInnerHTML={{ __html: Marked.parse(content) }}></div>
+                <div className='markdown prose dark:text-white prose-headings:text-accent prose-h1:text-accent' dangerouslySetInnerHTML={{ __html: Marked.parse(content) }}></div>
             </div>
         </div> 
     );
