@@ -15,7 +15,7 @@ const WorkPage = ({
         <div>
             <SeoHead
               image="cover_image"
-              title={title}
+              title={"Project - "+title}
               description={excerpt}
               url={`https://oswinjerome.in/works/${slug}`}
             />
