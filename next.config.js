@@ -7,6 +7,12 @@ const nextConfig = {
     }
     return config;
   },
+  images:{
+    domains:[
+      'images.unsplash.com',
+      'www.notion.so'
+    ]
+  }
 }
 
 module.exports = nextConfig
