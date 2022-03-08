@@ -1,12 +1,15 @@
 import { render } from '@9gustin/react-notion-render';
 import { Client } from "@notionhq/client";
+import Head from 'next/head';
 import React from "react";
 import { NotionRenderer } from "react-notion";
-const BlogDetails = ({blog}) => {
+const BlogDetails = ({blog,title}) => {
   return (
-    <div className="container mx-auto relative pt-12 dark:text-white min-h-[45vh] px-4 lg:px-0 mb-24 lg:mb-60 prose prose-slate ">
-
-      <div dangerouslySetInnerHTML={{__html: blog}}></div>
+    <div className="container mx-auto relative pt-12 dark:text-white min-h-[45vh] px-4 lg:px-0 mb-24 lg:mb-60 ">
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <div className='prose prose-slate' dangerouslySetInnerHTML={{__html: blog}}></div>
       {/* <p> {blog}</p> */}
       {/* <Render blocks={blog.results} useStyles /> */}
       {/* {render([blog], true)} */}
@@ -23,7 +26,7 @@ export const getStaticProps = async ({ params }) => {
   });
 
   const data = await notion.databases.query({
-    database_id: "a0d68c80d3d442538472100aa744e8b6",
+    database_id: "21966b36d33c436dba5408596ad2da9a",
   });
   let blogData = "Hello";
   await data.results.forEach(async(blog)=>{
@@ -31,14 +34,12 @@ export const getStaticProps = async ({ params }) => {
     if(blog.properties.slug?.rich_text[0]?.plain_text===slug){
       blogData = blog;
     }
-
-    
   })
 
-  const abc = await notion.blocks.children.list({
-    block_id: blogData.id,
+  // const abc = await notion.blocks.children.list({
+  //   block_id: blogData.id,
 
-  })
+  // })
   const pageBlocks = await notion.pages.retrieve({
     page_id:blogData.id,
   })
@@ -49,13 +50,13 @@ export const getStaticProps = async ({ params }) => {
       excludeCSS: true,
       bodyContentOnly:true
     });
-    console.log(title, icon, cover, html);
 
   
 
   return {
     props: {
-      blog:html
+      blog:html,
+      title:title,
     },
   };
 };
@@ -66,7 +67,7 @@ export const getStaticPaths = async () => {
   });
 
   const data = await notion.databases.query({
-    database_id: "a0d68c80d3d442538472100aa744e8b6",
+    database_id: "21966b36d33c436dba5408596ad2da9a",
   });
 
   //   console.log(data.results);
