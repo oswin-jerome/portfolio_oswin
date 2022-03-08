@@ -34,7 +34,7 @@ export const getStaticProps = async () => {
   });
 
   const data = await notion.databases.query({
-    database_id: "a0d68c80d3d442538472100aa744e8b6",
+    database_id: "21966b36d33c436dba5408596ad2da9a",
   });
 
   console.log(data.results);
