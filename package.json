@@ -11,6 +11,7 @@
     "@9gustin/react-notion-render": "^3.8.2",
     "@notionhq/client": "^1.0.1",
     "@ts-stack/markdown": "^1.4.0",
+    "animejs": "^3.2.1",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "gsap": "^3.9.1",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
+    "@types/animejs": "^3.1.4",
     "@types/marked": "^4.0.2",
     "@types/node": "17.0.18",
     "@types/react": "17.0.39",

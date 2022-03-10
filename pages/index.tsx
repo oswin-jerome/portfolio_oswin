@@ -27,7 +27,7 @@ const Home: NextPage = ({posts}:any) => {
       <About/>
       <RecentWorks posts={posts}/>
       <SkillSet/>
-      <Feedback/>
+      {/* <Feedback/> */}
       <Social/>
       <Contact/>
     

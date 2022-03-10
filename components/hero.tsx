@@ -1,21 +1,75 @@
 import Image from 'next/image';
 import React, { useEffect } from 'react'
 import gsap from 'gsap';
-
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import MotionPathPlugin from 'gsap/dist/MotionPathPlugin';
+import anime from 'animejs';
 
 const Hero = () => {
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(MotionPathPlugin)
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#hero-container",
+        pin: false,   // pin the trigger element while active
+        start: "center center", // when the top of the trigger hits the top of the viewport
+        end: "bottom -=100", // end after scrolling 500px beyond the start
+        scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        markers:false,
+        // snap: {
+        //   snapTo: "labels", // snap to the closest label in the timeline
+        //   duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+        //   delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+        //   ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
+        // }
+      }
+    });
+
+  
+
+    timeline.to('#hero-image-container img', {
+      scale:0.5,
+      filter: "blur(10px)",
+      translateY: 100,
+      duration:0.5,
+      opacity:0,
+    })
+
+  }, []);
+
+
+  const animate = () => {
+    anime({
+      targets: '#svg-circle path',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 500,
+      delay: function(el, i) { return i * 250 },
+      direction: 'alternate',
+      loop: false
+    });
     const tl = gsap.timeline({ defaults: { ease: "power1.inOut" } });
+    // tl.to("#svg-circle",{
+    //   // drawSVG:0,
+    //   duration:0.5,
+    //   opacity:1
+    // });
+    
     tl.to('#hero-image', {
       opacity: 1,
-      duration:0.5
-    },"+=0.5")
+      duration:0.7,
+      scale:1,
+      translateY: 0,
+
+    },"+=0.3")
 
     
     tl.to('#hero-text', {
       opacity:1,
       duration: 0.5,
+      scale: 1,
     },'-=0.3' )
     tl.to('#cta', {
       opacity:1,
@@ -26,18 +80,29 @@ const Hero = () => {
       opacity:1,
       duration: 0.5,
     },'-=0.3' )
-  }, []);
+  }
 
   return (
-    <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 ">
+    <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 " id='hero-container'>
       <div className=" h-full flex flex-col justify-end lg:row-start-1 lg:col-start-7 lg:col-end-12">
-        <div style={{ width: '100%', height: '90%', position: 'relative' }}>
-          <Image id='hero-image' className='opacity-0' title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" />
+        <div id='hero-image-container' className='rounded-full overflow-hidden lg:overflow-visible aspect-square h-auto' style={{   position: 'relative' }}>
+          <Image id='hero-image' onLoadingComplete={animate} className='opacity-0 scale-50 translate-y-36 -z-10' priority={true}  title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" />
+          {/* <svg id='svg-circle'  width="100%" height="100%" className='z-50' viewBox="0 0 577 577" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="288.5" cy="288.5" r="284.5" stroke="black" strokeWidth="8" />
+</svg> */}
+
+<svg id='svg-circle'  width="100%" height="100%" className='z-50 -bottom-0  absolute text-accent lg:hidden' viewBox="0 0 585 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M589 0.5C581 159.834 451.834 289 292.5 289C133.166 289 4 159.834 -5 0.5" stroke="currentColor" strokeWidth="8"/>
+</svg>
+
+
+
+
         </div>
       </div>
       <div className=" mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
         <div className="mt-3 flex flex-col items-center lg:items-start pb-24" >
-          <h2 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0" id='hero-text'>I Write<br /> Quality Code.</h2>
+          <h2 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0 scale-105" id='hero-text'>I Write<br /> Quality Code.</h2>
           <button id='cta' className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold opacity-0">Get in touch</button>
           <div id='soc' className="flex gap-12 mt-8 dark:text-white opacity-0">
             <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
