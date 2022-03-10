@@ -9,7 +9,7 @@ const BlogDetails = ({blog,title}) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className='prose prose-slate' dangerouslySetInnerHTML={{__html: blog}}></div>
+      <div className='prose dark:text-white/60 prose-strong:text-white/60 prose-headings:text-accent prose-h1:text-accent' dangerouslySetInnerHTML={{__html: blog}}></div>
       {/* <p> {blog}</p> */}
       {/* <Render blocks={blog.results} useStyles /> */}
       {/* {render([blog], true)} */}
@@ -29,6 +29,7 @@ export const getStaticProps = async ({ params }) => {
     database_id: "21966b36d33c436dba5408596ad2da9a",
   });
   let blogData = "Hello";
+  let description = "";
   await data.results.forEach(async(blog)=>{
 
     if(blog.properties.slug?.rich_text[0]?.plain_text===slug){
