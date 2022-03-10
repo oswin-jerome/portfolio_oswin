@@ -8,7 +8,7 @@ const Blogs = ({ data }) => {
     <div className="min-h-[75vh] container mx-auto relative pt-12 px-4 lg:px-0 mb-24 lg:mb-60">
       <h1 className="text-accent  text-3xl">Blogs</h1>
 
-      <div className="grid grid-cols-4 gap-4 mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-12">
         {
             data.results.map(
                 (blog)=>{

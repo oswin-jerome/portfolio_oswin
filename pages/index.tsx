@@ -14,6 +14,7 @@ import matter from "gray-matter";
 import fs from "fs";
 import { useEffect } from "react";
 import SeoHead from "../components/seoHead";
+import NavBar from "../components/navBar";
 const Home: NextPage = ({posts}:any) => {
 
   useEffect(()=>{

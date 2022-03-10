@@ -12,7 +12,7 @@ class MyDocument extends Document {
       <Html className="bg-light-accentLight dark:bg-dark-background ">
         <Head/>
         <body>
-            <NavBar/>
+            {/* <NavBar/> */}
           <Main />
           <NextScript />
           <footer className="mt-12 h-20 bg-accent">
