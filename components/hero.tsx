@@ -91,7 +91,7 @@ const Hero = () => {
 <circle cx="288.5" cy="288.5" r="284.5" stroke="black" strokeWidth="8" />
 </svg> */}
 
-<svg id='svg-circle'  width="100%" height="100%" className='z-20 -bottom-0  absolute text-accent lg:hidden' viewBox="0 0 585 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg id='svg-circle'  width="100%" height="100%" className='z-20 -bottom-0 opacity-0  absolute text-accent lg:hidden' viewBox="0 0 585 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M589 0.5C581 159.834 451.834 289 292.5 289C133.166 289 4 159.834 -5 0.5" stroke="currentColor" strokeWidth="8"/>
 </svg>
 
