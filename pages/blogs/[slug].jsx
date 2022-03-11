@@ -8,7 +8,6 @@ const BlogDetails = ({blog,title,cover}) => {
     <div className="container mx-auto relative pt-12 dark:text-white min-h-[45vh] px-4 lg:px-0 mb-24 lg:mb-60 ">
       <Head>
         <title>{title}</title>
-<title>Tools I use on my laptop</title>
 <meta name="title" content={title}/>
 <meta name="description" content="These are the blog descriptions"/>
 
@@ -67,6 +66,9 @@ export const getStaticProps = async ({ params }) => {
       bodyContentOnly:true
     });
 
+    console.log("Debug", title)
+
+  
   
 
   return {

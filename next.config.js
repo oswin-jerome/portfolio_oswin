@@ -10,7 +10,8 @@ const nextConfig = {
   images:{
     domains:[
       'images.unsplash.com',
-      'www.notion.so'
+      'www.notion.so',
+      'i0.wp.com'
     ]
   }
 }

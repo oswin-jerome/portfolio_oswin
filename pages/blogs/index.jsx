@@ -37,7 +37,7 @@ export const getStaticProps = async () => {
     database_id: "21966b36d33c436dba5408596ad2da9a",
   });
 
-  console.log(data.results);
+  // console.log(data.results);
 
   return {
     props: {
