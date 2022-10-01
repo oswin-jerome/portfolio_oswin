@@ -26,12 +26,16 @@ const Hero = () => {
       },
     });
 
-    timeline.to("#hero-image-container img", {
-      scale: 0.5,
-      filter: "blur(10px)",
-      translateY: 100,
-      duration: 0.5,
-      opacity: 0,
+    // timeline.to("#hero-image-container img", {
+    //   scale: 0.5,
+    //   filter: "blur(10px)",
+    //   translateY: 100,
+    //   duration: 0.5,
+    //   opacity: 0,
+    // });
+    timeline.to("#hero-image-container svg #clip rect", {
+      scale: 0.0,
+      stagger: 0.1,
     });
   }, []);
 
@@ -94,23 +98,65 @@ const Hero = () => {
       },
       "-=0.3"
     );
+    tl.fromTo(
+      "#clip rect",
+      {
+        scale: 0,
+        transformOrigin: "center",
+      },
+      {
+        scale: 1,
+        stagger: 0.1,
+      }
+    );
   };
 
   return (
     <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 " id="hero-container">
       <div className=" h-full flex flex-col justify-end lg:row-start-1 lg:col-start-7 lg:col-end-12">
-        <div id="hero-image-container" className="rounded-full overflow-hidden lg:overflow-visible aspect-square h-auto" style={{ position: "relative" }}>
-          <Image id="hero-image" onLoadingComplete={animate} className="opacity-0 scale-50 translate-y-36 -z-10" priority={true} title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" />
+        <div id="hero-image-container" className="rounded-fulls overflow-hidden lg:overflow-visible aspect-square h-auto md:-translate-y-10 m-4" style={{ position: "relative", clipPath: "url(#clip)" }}>
+          {/* <Image id="hero-image" onLoadingComplete={animate} className="opacity-0 scale-50 translate-y-36 -z-10" priority={true} title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" /> */}
+          <Image
+            // style={{
+            //   clipPath: "url(#clip)",
+            // }}
+            id="hero-image2"
+            onLoadingComplete={animate}
+            className="-z-10 scale-150 md:scale-125 -translate-y-16"
+            priority={true}
+            title=""
+            src="/oswin_t.png"
+            layout="fill"
+            objectFit="fill"
+            alt="d"
+          />
           {/* <svg id='svg-circle'  width="100%" height="100%" className='z-50' viewBox="0 0 577 577" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="288.5" cy="288.5" r="284.5" stroke="black" strokeWidth="8" />
 </svg> */}
-
-          <svg id="svg-circle" width="100%" height="100%" className="opacity-0 z-20 -bottom-0  absolute text-accent lg:hidden" viewBox="0 0 585 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M589 0.5C581 159.834 451.834 289 292.5 289C133.166 289 4 159.834 -5 0.5" stroke="currentColor" strokeWidth="8" />
+          <svg width="0%" height="0%">
+            <defs>
+              <clipPath id="clip" clipPathUnits="objectBoundingBox">
+                <rect x="0.352539" y="0.614868" width="0.298013" height="0.385135" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.350586" width="0.298013" height="0.385135" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.352539" y="0.398651" width="0.298013" height="0.202703" rx="0.02" fill="#D9D9D9" />
+                <rect y="0.218918" width="0.334437" height="0.272973" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.0947266" y="0.00946045" width="0.240066" height="0.195946" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.666992" y="0.305405" width="0.268212" height="0.248649" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.668945" y="0.567566" width="0.331126" height="0.27027" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.666016" y="0.0945892" width="0.178808" height="0.197297" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.666992" y="0.851349" width="0.165563" height="0.135135" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.0947266" y="0.50676" width="0.240066" height="0.224324" rx="0.02" fill="#D9D9D9" />
+                <rect x="0.0947266" y="0.744598" width="0.240066" height="0.212162" rx="0.02" fill="#D9D9D9" />
+              </clipPath>
+            </defs>
           </svg>
+
+          {/* <svg id="svg-circle" width="100%" height="100%" className="opacity-0 z-20 -bottom-0  absolute text-accent lg:hidden" viewBox="0 0 585 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M589 0.5C581 159.834 451.834 289 292.5 289C133.166 289 4 159.834 -5 0.5" stroke="currentColor" strokeWidth="8" />
+          </svg> */}
         </div>
       </div>
-      <div className=" mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
+      <div className=" mt-2 md:mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
         <div className="mt-3 flex flex-col items-center lg:items-start pb-24">
           <h2 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0 scale-105" id="hero-text">
             I Write
