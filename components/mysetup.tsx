@@ -5,45 +5,45 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 
 const MySetup = () => {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#setup-container",
-        pin: false,
-        start: "start bottom",
-        end: "+=800 -=100",
-        scrub: 1,
-        markers: true,
-      },
-    });
-    timeline.to("#setup-img", {
-      translateY: 50,
-      duration: 0.5,
-    });
+  //   useEffect(() => {
+  //     gsap.registerPlugin(ScrollTrigger);
+  //     const timeline = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: "#setup-container",
+  //         pin: false,
+  //         start: "start bottom",
+  //         end: "+=800 -=100",
+  //         scrub: 1,
+  //         markers: true,
+  //       },
+  //     });
+  //     timeline.to("#setup-img", {
+  //       translateY: 50,
+  //       duration: 0.5,
+  //     });
 
-    gsap.fromTo(
-      "#setup-container",
-      10,
-      {
-        translateX: 0,
-        rotate: "1deg",
-        // translateY: 0,
-        transformOrigin: "center",
-      },
-      {
-        translateX: 20,
-        rotate: "-2deg",
-        // translateY: 10,
-        transformOrigin: "center",
+  //     gsap.fromTo(
+  //       "#setup-container",
+  //       10,
+  //       {
+  //         translateX: 0,
+  //         rotate: "1deg",
+  //         // translateY: 0,
+  //         transformOrigin: "center",
+  //       },
+  //       {
+  //         translateX: 20,
+  //         rotate: "-2deg",
+  //         // translateY: 10,
+  //         transformOrigin: "center",
 
-        repeatable: true,
+  //         repeatable: true,
 
-        repeat: 100,
-        yoyo: true,
-      }
-    );
-  }, []);
+  //         repeat: 100,
+  //         yoyo: true,
+  //       }
+  //     );
+  //   }, []);
 
   return (
     <div className="container mx-auto relative pt-28  px-4 lg:px-0">
