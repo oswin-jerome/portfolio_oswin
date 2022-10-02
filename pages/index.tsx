@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import SeoHead from "../components/seoHead";
 import NavBar from "../components/navBar";
 import Served from "../components/served";
+import MySetup from "../components/mysetup";
 const Home: NextPage = ({ posts }: any) => {
   useEffect(() => {
     console.log(posts);
@@ -35,6 +36,7 @@ const Home: NextPage = ({ posts }: any) => {
       <SkillSet />
       {/* <Feedback/> */}
       <Social />
+      <MySetup />
       <Contact />
     </div>
   );
