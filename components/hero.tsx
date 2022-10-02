@@ -15,7 +15,7 @@ const Hero = () => {
         pin: false, // pin the trigger element while active
         start: "center center", // when the top of the trigger hits the top of the viewport
         end: "bottom -=100", // end after scrolling 500px beyond the start
-        scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
         markers: false,
         // snap: {
         //   snapTo: "labels", // snap to the closest label in the timeline
@@ -26,17 +26,18 @@ const Hero = () => {
       },
     });
 
-    // timeline.to("#hero-image-container img", {
-    //   scale: 0.5,
-    //   filter: "blur(10px)",
-    //   translateY: 100,
-    //   duration: 0.5,
-    //   opacity: 0,
-    // });
-    timeline.to("#hero-image-container svg #clip rect", {
-      scale: 0.0,
-      stagger: 0.1,
+    timeline.to("#hero-image-container img", {
+      translateY: -20,
+      duration: 0.5,
     });
+    timeline.to(
+      "#hero-image-container svg #clip rect",
+      {
+        scale: 0.0,
+        stagger: 0.1,
+      },
+      "-=0.5"
+    );
   }, []);
 
   const animate = () => {

@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 const NavBar = () => {
-  const router = useRouter();
+  const { pathname } = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     // const listen = () => {
     //   console.log("Click!!!");
@@ -19,6 +18,14 @@ const NavBar = () => {
     //   window.removeEventListener("click", listen);
     // };
   }, []);
+
+  const navClassName = (route: String) => {
+    if (route == pathname) {
+      return "text-accent";
+    }
+
+    return "";
+  };
 
   return (
     <div className="container mx-auto py-4 flex justify-between px-4 md:px-0 flex-row-reverse md:flex-row items-center h-[8vh]">
@@ -49,22 +56,22 @@ const NavBar = () => {
       <ul className="gap-11 hidden md:flex dark:text-white c">
         <li>
           <Link href="/">
-            <a className="text-accent">Home</a>
+            <a className={navClassName("/")}>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="#about">
+          <Link href="/#about">
             <a>About</a>
           </Link>
         </li>
         <li>
           <Link href="/blogs">
-            <a>Blogs</a>
+            <a className={navClassName("/blogs")}>Blogs</a>
           </Link>
         </li>
         <li>
           <Link href="/works">
-            <a>Projects</a>
+            <a className={navClassName("/works")}>Projects</a>
           </Link>
         </li>
       </ul>
