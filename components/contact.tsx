@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="grid grid-cols-2  mt-8 lg:mt-28">
         <div className="  justify-center items-start  hidden lg:flex ">
           <div style={{ width: "100%", height: "100%", position: "relative" }}>
-            <Image title="" src="/chat.png" layout="fill" objectFit="contain" alt="d" />
+            <Image title="" src="/desk_contact.png" layout="fill" objectFit="contain" alt="d" />
           </div>
         </div>
         <div className="col-span-2 lg:col-span-1">
