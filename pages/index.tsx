@@ -27,7 +27,7 @@ const Home: NextPage = ({ posts }: any) => {
         image="/oswin.png"
         url="https://oswinjerome.in/"
         title="Oswin Jerome"
-        description="Hey I'm Oswin Jerome, I have 5 years of experience in programing. I'm specialized in Websites, Web Apps, Android Apps and lot more. I'm always eager to learn new technologies and I have a deep knowledge in latest technologies and frameworks"
+        description="Hey I'm Oswin Jero me, I have 5 years of experience in programing. I'm specialized in Websites, Web Apps, Android Apps and lot more. I'm always eager to learn new technologies and I have a deep knowledge in latest technologies and frameworks"
       />
       <Hero />
       <Served />
