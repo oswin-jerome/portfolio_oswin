@@ -62,7 +62,7 @@ export async function getStaticProps() {
   console.log(posts);
   return {
     props: {
-      posts: posts,
+      posts: posts.splice(0, 4),
     },
   };
 }
