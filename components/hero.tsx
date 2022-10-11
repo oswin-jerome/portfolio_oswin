@@ -83,6 +83,15 @@ const Hero = () => {
       "-=0.3"
     );
     tl.to(
+      "#description",
+      {
+        opacity: 1,
+        duration: 0.5,
+        scale: 1,
+      },
+      "-=0.3"
+    );
+    tl.to(
       "#cta",
       {
         opacity: 1,
@@ -157,16 +166,20 @@ const Hero = () => {
           </svg> */}
         </div>
       </div>
-      <div className=" mt-2 md:mt-8 flex items-center justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
-        <div className="mt-3 flex flex-col items-center lg:items-start pb-24">
-          <h2 className="font-bold text-5xl lg:text-7xl 2xl:text-8xl lg:mt-40 text-center lg:text-left text-textGrey dark:text-white opacity-0 scale-105" id="hero-text">
-            I Write
-            <br /> Quality Code.
+      <div className=" mt-2 md:mt-0 flex items-end lg:pb-12 justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
+        <div className="mt-0 flex flex-col items-center  justify-center lg:items-start  px-4 lg:px-auto">
+          <h2 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl  text-center lg:text-left text-textGrey dark:text-white opacity-0 scale-105" id="hero-text">
+            <span className="text-6xl lg:text-8xl 2xl:text-8xl text-accent">Developer</span>
+            <br />
+            <span> with Logical mind & Creative heart</span>
           </h2>
+          <p id="description" className="opacity-0 scale-105 text-black/40 text-sm mt-2 text-center lg:text-left">
+            Im a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.{" "}
+          </p>
           <a href="#contact" id="cta" className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold opacity-0">
             Get in touch
           </a>
-          <div id="soc" className="flex gap-12 mt-8 dark:text-white opacity-0">
+          <div id="soc" className="flex gap-12 mt-8 lg:mt-20 dark:text-white opacity-0">
             <a target="__blank" href="https://github.com/oswin-jerome">
               <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

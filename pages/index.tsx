@@ -35,7 +35,7 @@ const Home: NextPage = ({ posts }: any) => {
       <RecentWorks posts={posts} />
       <SkillSet />
       {/* <Feedback/> */}
-      <Social />
+      {/* <Social /> */}
       <MySetup />
       <Contact />
     </div>
