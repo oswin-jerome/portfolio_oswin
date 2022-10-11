@@ -123,8 +123,8 @@ const Hero = () => {
 
   return (
     <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 " id="hero-container">
-      <div className=" h-full flex flex-col justify-end lg:row-start-1 lg:col-start-7 lg:col-end-12">
-        <div id="hero-image-container" className="rounded-fulls overflow-hidden lg:overflow-visible aspect-square h-auto md:-translate-y-10 m-4" style={{ position: "relative", clipPath: "url(#clip)" }}>
+      <div className=" lg:h-full flex flex-col justify-start lg:justify-end lg:row-start-1 lg:col-start-7 lg:col-end-12">
+        <div id="hero-image-container" className="rounded-fulls overflow-hidden lg:overflow-visible aspect-square h-[30vh] object-cover lg:h-auto md:-translate-y-10 m-4" style={{ position: "relative", clipPath: "url(#clip)" }}>
           {/* <Image id="hero-image" onLoadingComplete={animate} className="opacity-0 scale-50 translate-y-36 -z-10" priority={true} title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" /> */}
           <Image
             // style={{
@@ -132,12 +132,12 @@ const Hero = () => {
             // }}
             id="hero-image2"
             onLoadingComplete={animate}
-            className="-z-10 scale-150 md:scale-125 -translate-y-16"
+            className="-z-10 scale-150 md:scale-125 lg:-translate-y-16 object-cover lg:object-fill"
             priority={true}
             title=""
             src="/oswin_t.png"
             layout="fill"
-            objectFit="fill"
+            // objectFit="fill"
             alt="d"
           />
           {/* <svg id='svg-circle'  width="100%" height="100%" className='z-50' viewBox="0 0 577 577" fill="none" xmlns="http://www.w3.org/2000/svg">
