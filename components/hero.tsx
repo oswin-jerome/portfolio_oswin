@@ -174,7 +174,7 @@ const Hero = () => {
             <span> with Logical mind & Creative heart</span>
           </h2>
           <p id="description" className="opacity-0 scale-105 text-black/40 text-sm mt-2 text-center lg:text-left">
-            Im a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.{" "}
+            I&apos;m a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.{" "}
           </p>
           <a href="#contact" id="cta" className="bg-accent px-10 py-4 rounded-lg soft-btn mt-8 font-bold opacity-0">
             Get in touch
