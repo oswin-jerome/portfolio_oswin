@@ -27,7 +27,7 @@ const Home: NextPage = ({ posts }: any) => {
         image="/oswin.png"
         url="https://oswinjerome.in/"
         title="Oswin Jerome"
-        description="Hey I'm Oswin Jero me, I have 5 years of experience in programing. I'm specialized in Websites, Web Apps, Android Apps and lot more. I'm always eager to learn new technologies and I have a deep knowledge in latest technologies and frameworks"
+        description="I'm a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech."
       />
       <Hero />
       <Served />
