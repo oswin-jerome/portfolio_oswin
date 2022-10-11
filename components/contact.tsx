@@ -15,7 +15,7 @@ const Contact = () => {
     },
     {
       img: "/social/linkedin.svg",
-      url: "https://www.linkedin.com/in/oswin-jerome-708587154/",
+      url: "https://www.linkedin.com/in/oswin-jerome/",
       handle: "@oswin-jerome",
     },
     {
