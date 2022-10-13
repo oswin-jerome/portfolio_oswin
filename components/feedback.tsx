@@ -13,12 +13,12 @@ const Feedback = () => {
       name: "Kingston - CEO, Space Digital Media",
       message: "I would definitely recommend Oswin to anyone looking for a new website. They are very talented and have given me great suggestions on how to make my website better!",
     },
-    {
-      id: 3,
-      name: "Thomas - CEO, Tihalt",
-      message:
-        "I have worked with Jerome for couple of years now and have found him to be an excellent resource. He is extremely knowledgeable and always willing to help train our staff in new techniques and review their work. He has also been very helpful in dealing with technical difficulties, providing tech suggestions when needed and in setting up our server environments.",
-    },
+    // {
+    //   id: 3,
+    //   name: "Thomas - CEO, Tihalt",
+    //   message:
+    //     "I have worked with Jerome for couple of years now and have found him to be an excellent resource. He is extremely knowledgeable and always willing to help train our staff in new techniques and review their work. He has also been very helpful in dealing with technical difficulties, providing tech suggestions when needed and in setting up our server environments.",
+    // },
   ];
   //
   return (
