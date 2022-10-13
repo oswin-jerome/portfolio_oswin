@@ -77,7 +77,7 @@ const NavBar = () => {
       </ul>
 
       {
-        <div className={(isOpen ? "translate-x-0 transition-all" : "-translate-x-full transition-all") + "  fixed top-0 bottom-0 z-50 left-0 w-[75vw]" + " bg-dark-background shadow-2xl "}>
+        <div className={(isOpen ? "translate-x-0 transition-all" : "-translate-x-full transition-all") + "  fixed top-0 bottom-0 z-50 left-0 w-[75vw]" + " bg-light-accentLight dark:before:bg-dark-background shadow-2xl "}>
           <ul onClick={() => setIsOpen(false)} className="dark:text-white c flex flex-col p-6 gap-10 pt-28">
             <li>
               <Link passHref href="/">

@@ -10,9 +10,11 @@
     font-family: 'Poppins', sans-serif;
 }
 .soft-btn{
-    box-shadow:  inset -3px -3px 5px 0px rgba(0, 0, 0, 0.224), inset 3px 3px 5px 0px rgba(255, 255, 255, 0.491);
+    @apply shadow-lg;
+    /* box-shadow:  inset -3px -3px 5px 0px rgba(0, 0, 0, 0.224), inset 3px 3px 5px 0px rgba(255, 255, 255, 0.491); */
 }
 
 .soft-btn:hover{
-    box-shadow:  inset -3px -3px 5px 0px rgba(0, 0, 0, 0.135), inset 3px 3px 8px 0px rgba(255, 255, 255, 0.224);
+    @apply shadow;
+    /* box-shadow:  inset -3px -3px 5px 0px rgba(0, 0, 0, 0.135), inset 3px 3px 8px 0px rgba(255, 255, 255, 0.224); */
 }
