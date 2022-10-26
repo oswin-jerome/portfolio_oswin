@@ -122,7 +122,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 " id="hero-container">
+    <div className="container mx-auto h-[92vh] flex flex-col   lg:grid grid-cols-12 lg:content-center " id="hero-container">
       <div className=" lg:h-full flex flex-col justify-start lg:justify-end lg:row-start-1 lg:col-start-7 lg:col-end-12">
         <div id="hero-image-container" className="rounded-fulls overflow-hidden lg:overflow-visible aspect-square h-[30vh] object-cover lg:h-auto md:-translate-y-10 m-4" style={{ position: "relative", clipPath: "url(#clip)" }}>
           {/* <Image id="hero-image" onLoadingComplete={animate} className="opacity-0 scale-50 translate-y-36 -z-10" priority={true} title="" src="/oswin_bg_rm.png" layout="fill" objectFit="contain" alt="d" /> */}
