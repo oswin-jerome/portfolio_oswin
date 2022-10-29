@@ -16,6 +16,9 @@ module.exports = {
         },
       },
     },
+    container: {
+      padding: "1rem",
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

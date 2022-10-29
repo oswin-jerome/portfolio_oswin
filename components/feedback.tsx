@@ -22,7 +22,7 @@ const Feedback = () => {
   ];
   //
   return (
-    <div className="container mx-auto relative pt-28  px-4 lg:px-0">
+    <div className="container mx-auto relative pt-28  ">
       <p className="absolute text-[18vw] lg:text-[15vw] font-extrabold top-10 lg:top-0 -z-10 text-accent opacity-20 dark:opacity-30">Feedbacks</p>
       <p className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-2/4 dark:text-white dark:opacity-75">Look what clients & people I have worked with have to tell.</p>
 

@@ -4,7 +4,7 @@ import React from "react";
 const SkillSet = () => {
   const skills: string[] = ["/tech/flutter.svg", "/tech/react.svg", "/tech/nodejs-icon.svg", "/tech/tailwind.png", "/tech/vue-9.svg", "/tech/nextjs.png", "/tech/laravel.png", "/tech/firebase.svg"];
   return (
-    <div className="container mx-auto relative pt-28 px-4 lg:px-0 mb-24 lg:mb-60">
+    <div className="container mx-auto relative pt-28  mb-24 lg:mb-60">
       <p className="absolute text-[15vw] lg:text-[13vw] font-extrabold top-10 lg:top-0 -z-10 text-accent opacity-20 dark:opacity-30">My Skill Set</p>
       <h2 className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-6 lg:mt-20 dark:text-white ">
         These are some of the tools &<br /> Technologies I work with.
