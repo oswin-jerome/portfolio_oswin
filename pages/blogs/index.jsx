@@ -2,11 +2,13 @@ import { Client } from "@notionhq/client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import SeoHead from "../../components/seoHead";
 
 const Blogs = ({ data }) => {
   return (
     <div className="min-h-[75vh] container mx-auto relative pt-12  mb-24 lg:mb-60">
       <h1 className="text-accent  text-3xl">Blogs</h1>
+      <SeoHead image="/oswin.png" url="https://oswinjerome.in/blogs" title="Blogs - Oswin Jerome" description="My blogs are my thoughts, and a guide to the technologies I like to use." />
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-12">
         {data.results.map((blog) => {

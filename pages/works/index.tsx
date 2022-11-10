@@ -5,13 +5,14 @@ import * as React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
+import SeoHead from "../../components/seoHead";
 
 const Projects: NextPage = ({ works }: any) => {
   console.log(works);
   return (
     <div className="min-h-[75vh] container mx-auto relative pt-12  mb-24 lg:mb-60">
       <h1 className="text-accent  text-3xl">Projects</h1>
-
+      <SeoHead image="/oswin.png" url="https://oswinjerome.in/works" title="Works - Oswin Jerome" description="I'm so excited to share my projects with you. I love working on all sorts of different technologies, and I'm always trying to do my best work.." />
       <div className="container p-0 mx-auto mt-8 lg:mt-16 mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
         {works.map((work: any, index: any) => {
           return (
