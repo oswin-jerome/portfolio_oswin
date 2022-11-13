@@ -29,7 +29,9 @@ const NavBar = () => {
 
   return (
     <div className="container  mx-auto py-4 flex justify-between px-8  flex-row-reverse md:flex-row items-center h-[8vh]">
-      <p className="text-xl font-bold text-accent">Oswin Jerome</p>
+      <Link href="/" passHref>
+        <p className="text-xl font-bold text-accent cursor-pointer">Oswin Jerome</p>
+      </Link>
 
       <button
         onClick={(e) => {
