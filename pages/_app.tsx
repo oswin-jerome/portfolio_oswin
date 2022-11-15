@@ -14,6 +14,17 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
   return (
     <div>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-P7E8PSHLW0" strategy="afterInteractive"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){
+  dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+  gtag('js', new Date());
+
+  gtag('config', 'G-P7E8PSHLW0');`}
+      </Script>
       <Map
         // color="225,170,143"
         innerSize={8}
@@ -32,17 +43,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <NavBar />
       <Component {...pageProps} />
-
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DQNW5E1C1P" strategy="lazyOnload"></Script>
-      <Script id="ga" strategy="lazyOnload">
-        {`  window.dataLayer = window.dataLayer || [];
-  function gtag(){
-  dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'G-DQNW5E1C1P');`}
-      </Script>
     </div>
   );
 }
