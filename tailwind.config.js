@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
+  darkMode: "media",
   theme: {
     extend: {
       colors: {
@@ -12,7 +12,8 @@ module.exports = {
           // accentLight: "#f5f5f5",
         },
         dark: {
-          background: "#151D34",
+          // background: "#151D34",
+          background: "#18120F",
         },
       },
     },

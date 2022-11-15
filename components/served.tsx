@@ -3,7 +3,7 @@ import React from "react";
 const Served = () => {
   return (
     <div className="py-12 mt-20">
-      <h3 className="text-3xl font-bold text-center text-gray-800/70">Proudly Served</h3>
+      <h3 className="text-3xl font-bold text-center text-gray-800/70 dark:text-accent">Proudly Served</h3>
       <div className="flex gap-10 justify-center mt-6 text-accent/30">
         <svg version="1.1" className="h-8" id="Cognizant_Logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 820 189.56" enableBackground="new 0 0 820 189.56" xmlSpace="preserve">
           <path
