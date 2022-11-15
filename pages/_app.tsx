@@ -5,6 +5,7 @@ import Kursor from "kursor";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect } from "react";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {}, []);
   const Map: any = dynamic(
@@ -31,6 +32,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <NavBar />
       <Component {...pageProps} />
+
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DQNW5E1C1P" strategy="lazyOnload"></Script>
+      <Script id="ga" strategy="lazyOnload">
+        {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){
+  dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQNW5E1C1P');`}
+      </Script>
     </div>
   );
 }
