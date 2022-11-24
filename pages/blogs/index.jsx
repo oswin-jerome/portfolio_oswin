@@ -5,6 +5,7 @@ import React from "react";
 import SeoHead from "../../components/seoHead";
 
 const Blogs = ({ data }) => {
+  console.log(data);
   return (
     <div className="min-h-[75vh] container mx-auto relative pt-12  mb-24 lg:mb-60">
       <h1 className="text-accent  text-3xl">Blogs</h1>
@@ -34,9 +35,22 @@ export const getStaticProps = async () => {
     auth: process.env.NOTION_SECRET,
   });
 
-  const data = await notion.databases.query({
-    database_id: "21966b36d33c436dba5408596ad2da9a",
-  });
+  let data = {};
+  if (process.env.NODE_ENV !== "production") {
+    data = await notion.databases.query({
+      database_id: "21966b36d33c436dba5408596ad2da9a",
+    });
+  } else {
+    data = await notion.databases.query({
+      database_id: "21966b36d33c436dba5408596ad2da9a",
+      filter: {
+        property: "Status",
+        select: {
+          equals: "published",
+        },
+      },
+    });
+  }
 
   // console.log(data.results);
 

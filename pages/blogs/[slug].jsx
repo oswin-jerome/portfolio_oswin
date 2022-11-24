@@ -4,6 +4,7 @@ import Head from "next/head";
 import React from "react";
 import { NotionRenderer } from "react-notion";
 const BlogDetails = ({ blog, title, cover }) => {
+  console.log(blog);
   return (
     <div className="container mx-auto relative pt-12 dark:text-white min-h-[45vh] mb-24 lg:mb-60 ">
       <Head>
@@ -23,7 +24,7 @@ const BlogDetails = ({ blog, title, cover }) => {
         <meta property="twitter:description" content="These are the blog descriptions" />
         <meta property="twitter:image" content={cover}></meta>
       </Head>
-      <div className="prose dark:text-white/60 prose-strong:text-white/60 prose-headings:text-accent prose-h1:text-accent" dangerouslySetInnerHTML={{ __html: blog }}></div>
+      <div className="prose  dark:text-white/60 prose-strong:text-white/60 prose-headings:text-accent prose-h1:text-accent" dangerouslySetInnerHTML={{ __html: blog }}></div>
       {/* <p> {blog}</p> */}
       {/* <Render blocks={blog.results} useStyles /> */}
       {/* {render([blog], true)} */}
