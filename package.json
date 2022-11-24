@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@9gustin/react-notion-render": "^3.11.1",
@@ -18,6 +19,7 @@
     "kursor": "^0.1.6",
     "marked": "^4.0.12",
     "next": "^12.3.1",
+    "next-sitemap": "^3.1.32",
     "notion-page-to-html": "^1.1.4",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.2",

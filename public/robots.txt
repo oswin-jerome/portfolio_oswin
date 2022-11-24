@@ -1,3 +1,9 @@
+# *
 User-agent: *
-Disallow: /cgi-bin/
+Allow: /
+
+# Host
+Host: https://oswinjerome.in
+
+# Sitemaps
 Sitemap: https://oswinjerome.in/sitemap.xml
