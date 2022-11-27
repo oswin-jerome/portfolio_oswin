@@ -8,7 +8,7 @@ import SeoHead from "../../components/seoHead";
 const WorkPage = ({ frontmatter: { title, date, cover_image, excerpt }, slug, content }: any) => {
   return (
     <div>
-      <SeoHead image="cover_image" title={"Project - " + title} description={excerpt} url={`https://oswinjerome.in/works/${slug}`} />
+      <SeoHead image={cover_image} title={"Project - " + title} description={excerpt} url={`https://oswinjerome.in/works/${slug}`} />
       <div className="post container mx-auto mt-6 p-8">
         {/* <h1 className='text-4xl font-bold mb-5'>{title}</h1> */}
         <div className="markdown prose dark:text-white prose-headings:text-accent prose-h1:text-accent dark:prose-a:text-blue-400" dangerouslySetInnerHTML={{ __html: Marked.parse(content) }}></div>
