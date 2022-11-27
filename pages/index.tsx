@@ -24,8 +24,8 @@ const Home: NextPage = ({ posts }: any) => {
   return (
     <div>
       <SeoHead
-        image="/oswin.png"
-        url="https://oswinjerome.in/"
+        image="/oswin.jpg"
+        url="https://www.oswinjerome.in/"
         title="Oswin Jerome"
         description="I'm a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech."
       />
