@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://oswinjerome.in
+Host: https://www.oswinjerome.in
 
 # Sitemaps
-Sitemap: https://oswinjerome.in/sitemap.xml
+Sitemap: https://www.oswinjerome.in/sitemap.xml
