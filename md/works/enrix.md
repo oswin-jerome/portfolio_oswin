@@ -2,7 +2,7 @@
 title: "Enrix Property Management"
 date: "March 5, 2021"
 excerpt: "A Property Management System"
-cover_image: "/works/enrix_1.png"
+cover_image: "/works/enrix_1.jpg"
 ---
 
 # Enrix Property Management
@@ -13,7 +13,7 @@ cover_image: "/works/enrix_1.png"
 - MySQL
 - Flutter
 
-![alt text](/works/enrix_1.png)
+![alt text](/works/enrix_1.jpg)
 
 Built a customer portal and a admin dashboard for a property management company using Laravel and Flutter.
 This product helps customers to monitor their properties from anywhere through the app.

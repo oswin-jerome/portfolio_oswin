@@ -2,14 +2,14 @@
 title: "Aqua Template"
 date: "October 3, 2023"
 excerpt: "Brining a admin template UI inspired from a IG post."
-cover_image: "/works/aqua_cover.png"
+cover_image: "/works/aqua_cover.jpg"
 ---
 
 # Aqua Template
 
 ### Tech Used
 
-- NextJS 
+- NextJS
 - Tailwind
 
 ![alt text](/works/aqua.jpeg)
@@ -17,6 +17,6 @@ cover_image: "/works/aqua_cover.png"
 Recently I saw this UI in a InstaGram post and wanted to bring it live with code.
 [Check it out](https://aqua-template.netlify.app)
 
-
 ### Credits
+
 [website.xv](https://www.instagram.com/p/Ci2vIUgudVw/)
