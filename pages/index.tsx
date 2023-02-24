@@ -50,8 +50,8 @@ const Home: NextPage = ({ posts }: any) => {
                 <Dialog.Panel className="w-full h-[80vh] flex flex-col items-center justify-between transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <div className="mt-2  flex justify-center items-center flex-col">
                     <Image src="/bday.svg" alt="bday" className="" height={200} width={200} />
-                    <h5 className="text-4xl text-center font-bold text-opacity-70 mt-10">Hey hey It&apos;s Birthday</h5>
-                    <p className="text-sm text-gray-500 text-center mt-3">Yethuku poranthom nu therialla....poranthutom vanthu thanae aaganum.... edhu vanthalum pathukalam 🔥🔥🔥</p>
+                    <h5 className="text-4xl text-center font-bold text-opacity-70 mt-10">Hey hey It&apos;s my Birthday</h5>
+                    <p className="text-sm text-gray-500 text-center mt-3">Yethuku poranthom nu therialla....poranthutom valnthu thanae aaganum.... edhu vanthalum pathukalam 🔥🔥🔥</p>
                   </div>
 
                   <div className="mt-4 flex items-center justify-center">
