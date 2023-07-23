@@ -26,18 +26,18 @@ const Hero = () => {
       },
     });
 
-    timeline.to("#hero-image-container img", {
-      translateY: -20,
-      duration: 0.5,
-    });
-    timeline.to(
-      "#hero-image-container svg #clip rect",
-      {
-        scale: 0.0,
-        stagger: 0.1,
-      },
-      "-=0.5"
-    );
+    // timeline.to("#hero-image-container img", {
+    //   translateY: -20,
+    //   duration: 0.5,
+    // });
+    // timeline.to(
+    //   "#hero-image-container svg #clip rect",
+    //   {
+    //     scale: 0.0,
+    //     stagger: 0.1,
+    //   },
+    //   "-=0.5"
+    // );
   }, []);
 
   const animate = () => {
