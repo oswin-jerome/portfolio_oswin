@@ -12,8 +12,8 @@ const SkillSet = () => {
 
       <div className="mt-8 lg:mt-20 grid grid-cols-5 xl:grid-cols-7 h-full gap-8 lg:gap-y-20">
         {skills.map((skill, i) => (
-          <div className="relative object-contain " key={i}>
-            <Image height="100%" width="100%" src={skill} alt="sd" />
+          <div className="relative object-contain w-12 md:w-20 aspect-square " key={i}>
+            <Image fill={true} className="absolute inset-0 object-contain" src={skill} alt="sd" />
           </div>
         ))}
       </div>

@@ -57,23 +57,21 @@ const NavBar = () => {
 
       <ul className="gap-11 hidden md:flex dark:text-white c">
         <li>
-          <Link href="/">
-            <a className={navClassName("/")}>Home</a>
+          <Link className={navClassName("/")} passHref href="/">
+            <p>Home</p>
           </Link>
         </li>
         <li>
-          <Link href="/#about">
-            <a>About</a>
+          <Link href="/#about">About</Link>
+        </li>
+        <li>
+          <Link href="/blogs" className={navClassName("/blogs")}>
+            <>Blogs</>
           </Link>
         </li>
         <li>
-          <Link href="/blogs">
-            <a className={navClassName("/blogs")}>Blogs</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/works">
-            <a className={navClassName("/works")}>Projects</a>
+          <Link href="/works" className={navClassName("/works")}>
+            <>Projects</>
           </Link>
         </li>
       </ul>

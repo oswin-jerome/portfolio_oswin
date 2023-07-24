@@ -19,11 +19,11 @@
     "gsap": "^3.9.1",
     "kursor": "^0.1.6",
     "marked": "^4.0.12",
-    "next": "^12.3.1",
+    "next": "^13.4.12",
     "next-sitemap": "^3.1.32",
     "notion-page-to-html": "^1.1.4",
     "react": "^18.2.0",
-    "react-animated-cursor": "^2.5.2",
+    "react-animated-cursor": "^2.7.0",
     "react-cursor": "^2.0.15",
     "react-dom": "^18.2.0",
     "react-notion": "^0.10.0"
@@ -36,7 +36,7 @@
     "@types/react": "17.0.39",
     "autoprefixer": "^10.4.2",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10",
+    "eslint-config-next": "^13.4.12",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.22",
     "typescript": "4.5.5"

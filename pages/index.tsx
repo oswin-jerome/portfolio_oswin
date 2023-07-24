@@ -21,8 +21,6 @@ import { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 const Home: NextPage = ({ posts }: any) => {
-
-
   return (
     <div>
       <SeoHead

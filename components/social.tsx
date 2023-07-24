@@ -29,7 +29,7 @@ const Social = () => {
         {skills.map((skill, i) => (
           <a href={skill.url} key={i} target="_blank" rel="noopener noreferrer">
             <div className="relative object-contain cursor-pointer">
-              <Image height="100%" width="100%" src={skill.img} alt="sd" />
+              <Image fill src={skill.img} alt="sd" />
             </div>
           </a>
         ))}
