@@ -27,10 +27,12 @@ const Contact = () => {
   return (
     <div id="contact" className="container mx-auto relative pt-28  ">
       <p className="absolute text-[16vw] lg:text-[15vw] font-extrabold top-10 lg:top-0 -z-10 text-accent opacity-20 dark:opacity-30">Contact Me</p>
-      <h2 className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-2/4 dark:text-white">Share your Queries & Feedback.</h2>
+      <h2 data-animate-on-scroll className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-2/4 dark:text-white">
+        Share your Queries & Feedback.
+      </h2>
 
       <div className="grid grid-cols-2  mt-8 lg:mt-28">
-        <div className="col-span-2 lg:col-span-1 mt-10">
+        <div data-animate-on-scroll className="col-span-2 lg:col-span-1 mt-10">
           <form action="https://formspree.io/f/xzborajg" method="POST" className="p-0 lg:px-5">
             <div className="flex flex-col">
               <label htmlFor="name" className="mb-1 font-medium dark:text-white dark:opacity-75">
@@ -57,12 +59,14 @@ const Contact = () => {
           </form>
         </div>
         <div className=" col-span-2 lg:col-span-1 lg:pl-44 pt-32 lg:pt-0 relative">
-          <h4 className="font-bold mb-10 lg:mb-20 text-3xl text-accent">Other ways to contact</h4>
-          <Image className="absolute rotate-90 top-0 left-[20%] lg:rotate-0 lg:left-10 lg:top-[50%]" src="/arrow.svg" alt="arrow" width={100} height={50} />
+          <h4 data-animate-on-scroll className="font-bold mb-10 lg:mb-20 text-3xl text-accent">
+            Other ways to contact
+          </h4>
+          <Image data-animate-on-scroll className="absolute rotate-90 top-0 left-[20%] lg:rotate-0 lg:left-10 lg:top-[50%]" src="/arrow.svg" alt="arrow" width={100} height={50} />
 
           <div className="grid grid-cols-2 lg:flex lg:flex-col lg:justify-center gap-8 ">
             {links.map((skill, i) => (
-              <a href={skill.url} key={i} target="_blank" rel="noopener noreferrer">
+              <a data-animate-on-scroll href={skill.url} key={i} target="_blank" rel="noopener noreferrer">
                 <div className="relative object-contain cursor-pointer flex gap-5 items-center">
                   <Image width={40} height={40} src={skill.img} alt="sd" />
                   <p className="text-accent">{skill.handle}</p>

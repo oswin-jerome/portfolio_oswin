@@ -5,7 +5,7 @@ const Served = () => {
     <div className="py-12 mt-20">
       <h3 className="text-3xl font-bold text-center text-gray-800/70 dark:text-accent">Proudly Served</h3>
       <div className="flex gap-10 justify-center mt-6 text-accent/30">
-        <svg version="1.1" className="h-8" id="Cognizant_Logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 820 189.56" enableBackground="new 0 0 820 189.56" xmlSpace="preserve">
+        <svg data-animate-on-scroll version="1.1" className="h-8" id="Cognizant_Logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 820 189.56" enableBackground="new 0 0 820 189.56" xmlSpace="preserve">
           <path
             fill="currentColor"
             d="M469.219,114.094l47.573-46.331h-46.855V45.945h80.144V68.12l-47.58,46.155h48.485v21.815h-81.749
@@ -44,7 +44,7 @@ c-0.466-0.202-0.975-0.289-1.482-0.252h-1.046v2.505h1.109c0.395,0.019,0.787-0.033
 c0.395-0.178,0.669-0.548,0.721-0.978C805.399,20.795,805.221,20.37,804.88,20.104z"
           />
         </svg>
-        <svg className="h-12" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 87.1 96.6">
+        <svg data-animate-on-scroll className="h-12" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 87.1 96.6">
           <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_1-2" data-name="Layer 1">
               <path

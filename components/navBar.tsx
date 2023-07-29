@@ -6,17 +6,24 @@ const NavBar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    // const listen = () => {
-    //   console.log("Click!!!");
-    //   if (isOpen) {
-    //     setIsOpen(false);
-    //   }
-    // };
-    // window.addEventListener("click", listen);
-    // return () => {
-    //   console.log("Unmount");
-    //   window.removeEventListener("click", listen);
-    // };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((element) => {
+        if (element.isIntersecting) {
+          element.target.classList.remove("hide-me");
+          element.target.classList.add("show-me");
+          console.log("intersecting ");
+        } else {
+          element.target.classList.add("hide-me");
+          element.target.classList.remove("show-me");
+        }
+      });
+    });
+    const elements = document.querySelectorAll("[data-animate-on-scroll]");
+    elements.forEach((element) => {
+      element.classList.add("hide-me");
+      element.classList.remove("show-me");
+      // observer.observe(element);
+    });
   }, []);
 
   const navClassName = (route: String) => {

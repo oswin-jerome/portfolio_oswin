@@ -24,11 +24,13 @@ const Feedback = () => {
   return (
     <div className="container mx-auto relative pt-28  ">
       <p className="absolute text-[18vw] lg:text-[15vw] font-extrabold top-10 lg:top-0 -z-10 text-accent opacity-20 dark:opacity-30">Feedbacks</p>
-      <p className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-[70%] dark:text-white dark:opacity-75">Look what clients & people I have worked with have to tell.</p>
+      <p data-animate-on-scroll className="text-2xl lg:text-5xl font-bold text-gray-700 z-10 -mt-4 lg:mt-12 lg:w-[70%] dark:text-white dark:opacity-75">
+        Look what clients & people I have worked with have to tell.
+      </p>
 
       <div className="mt-8 lg:mt-16 mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         {recentWorks.map((work) => (
-          <div key={work.id} className="shadow-md hover:shadow-2xl p-8 bg-white rounded-lg aspect-[4/3] flex flex-col justify-between">
+          <div data-animate-on-scroll key={work.id} className="shadow-md hover:shadow-2xl p-8 bg-white rounded-lg aspect-[4/3] flex flex-col justify-between">
             <p className="text-center text-gray-500 italic">&quot; {work.message} &quot;</p>
             <p className="text-center font-bold">{work.name}</p>
           </div>
