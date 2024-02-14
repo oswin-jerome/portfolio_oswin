@@ -39,7 +39,7 @@ const RecentWorks = ({ posts }: any) => {
   }, []);
 
   useEffect(() => {
-    console.log(posts);
+    // console.log(posts);
   }, [posts]);
 
   const recentWorks = [1, 2, 3, 4, 5];

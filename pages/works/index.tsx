@@ -8,7 +8,7 @@ import Image from "next/legacy/image";
 import SeoHead from "../../components/seoHead";
 
 const Projects: NextPage = ({ works }: any) => {
-  console.log(works);
+  // console.log(works);
   return (
     <div className="min-h-[75vh] container mx-auto relative pt-12  mb-24 lg:mb-60">
       <h1 className="text-accent  text-3xl">Projects</h1>
@@ -49,7 +49,7 @@ export async function getStaticProps() {
       frontmatter,
     };
   });
-  console.log(works);
+  // console.log(works);
   return {
     props: {
       works: works,

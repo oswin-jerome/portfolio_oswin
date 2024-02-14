@@ -4,7 +4,6 @@ import Head from "next/head";
 import React from "react";
 import { NotionRenderer } from "react-notion";
 const BlogDetails = ({ blog, title, cover }) => {
-  console.log(blog);
   return (
     <div className="container mx-auto relative pt-12 dark:text-white min-h-[45vh] mb-24 lg:mb-60 ">
       <Head>
@@ -66,7 +65,7 @@ export const getStaticProps = async ({ params }) => {
     bodyContentOnly: true,
   });
 
-  console.log("Debug", title);
+  // console.log("Debug", title);
 
   return {
     props: {

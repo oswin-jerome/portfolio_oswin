@@ -11,7 +11,7 @@ const NavBar = () => {
         if (element.isIntersecting) {
           element.target.classList.remove("hide-me");
           element.target.classList.add("show-me");
-          console.log("intersecting ");
+          // console.log("intersecting ");
         } else {
           element.target.classList.add("hide-me");
           element.target.classList.remove("show-me");
@@ -45,7 +45,7 @@ const NavBar = () => {
           e.preventDefault();
           setIsOpen(true);
           const listen = () => {
-            console.log("Click!!!");
+            // console.log("Click!!!");
             if (isOpen) {
               setIsOpen(false);
               window.removeEventListener("click", listen);

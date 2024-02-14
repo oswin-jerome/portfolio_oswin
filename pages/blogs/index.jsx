@@ -5,7 +5,7 @@ import React from "react";
 import SeoHead from "../../components/seoHead";
 
 const Blogs = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="min-h-[75vh] container mx-auto relative pt-12  mb-24 lg:mb-60">
       <h1 className="text-accent  text-3xl">Blogs</h1>
