@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { useEffect } from "react";
 
 const MySetup = () => {

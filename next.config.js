@@ -7,13 +7,22 @@ const nextConfig = {
     }
     return config;
   },
-  images:{
-    domains:[
-      'images.unsplash.com',
-      'www.notion.so',
-      'i0.wp.com'
-    ]
-  }
-}
+  images: {
+    remotePatterns: [
+      {
+        hostname: "images.unsplash.com",
+        protocol: "https",
+      },
+      {
+        hostname: "www.notion.so",
+        protocol: "https",
+      },
+      {
+        hostname: "i0.wp.com",
+        protocol: "https",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

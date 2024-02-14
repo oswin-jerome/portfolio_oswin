@@ -4,7 +4,7 @@ import fs from "fs";
 import * as React from "react";
 import matter from "gray-matter";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import SeoHead from "../../components/seoHead";
 
 const Projects: NextPage = ({ works }: any) => {

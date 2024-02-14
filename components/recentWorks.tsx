@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import path from "path";
 import matter from "gray-matter";
 import fs from "fs";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
