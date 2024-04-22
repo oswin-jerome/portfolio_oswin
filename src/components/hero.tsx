@@ -156,11 +156,11 @@ const Hero = () => {
       </div>
       <div className=" mt-2 md:mt-0 flex items-end lg:pb-12 justify-center  lg:col-start-1 lg:col-end-6 2xl:col-end-6 lg:row-start-1">
         <div className="mt-0 flex flex-col items-center  justify-center lg:items-start  px-4 lg:px-auto">
-          <h2 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl  text-center lg:text-left text-textGrey dark:text-white opacity-0 scale-105" id="hero-text">
+          <h1 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl  text-center lg:text-left text-textGrey dark:text-white opacity-0 scale-105" id="hero-text">
             <span className="text-6xl lg:text-8xl 2xl:text-8xl text-accent">Developer</span>
             <br />
             <span> with Logical mind & Creative heart</span>
-          </h2>
+          </h1>
           <p id="description" className="opacity-0 scale-105 text-black/40 dark:text-white/60 text-sm mt-2 text-center lg:text-left">
             I&apos;m a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.{" "}
           </p>

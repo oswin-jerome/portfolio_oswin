@@ -4,6 +4,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { Metadata } from "next";
 const getData = () => {
   const files = fs.readdirSync(path.join("md/works"));
 
@@ -29,6 +30,16 @@ const getData = () => {
   });
 
   return works;
+};
+
+export const metadata: Metadata = {
+  title: "Projects - Oswin Jerome",
+  description: "I'm a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.",
+  openGraph: {
+    images: ["/oswin.jpg"],
+  },
+
+  keywords: ["Oswin Jerome", "Oswin", "Jerome", "Flutter", "Laravel", "Php", "JavaScript"],
 };
 
 const ProjectsPage = () => {

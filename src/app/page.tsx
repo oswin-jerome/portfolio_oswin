@@ -45,6 +45,9 @@ export const metadata: Metadata = {
   description: "I'm a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.",
   openGraph: {
     images: ["/oswin.jpg"],
+    type: "website",
+    url: "https://oswinjerome.in",
+    siteName: "Oswin Jerome",
   },
 
   keywords: ["Oswin Jerome", "Oswin", "Jerome", "Flutter", "Laravel", "Php", "JavaScript"],
