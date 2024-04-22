@@ -3,6 +3,7 @@ title: "Heptade"
 date: "Jun 5, 2023"
 excerpt: "Website for a trading company"
 cover_image: "/works/heptade.jpeg"
+id: 5
 ---
 
 # Heptade

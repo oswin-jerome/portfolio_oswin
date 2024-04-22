@@ -4,8 +4,12 @@ import path from "path";
 import matter from "gray-matter";
 import { Marked } from "@ts-stack/markdown";
 import { Metadata, ResolvingMetadata } from "next";
+import { redirect } from "next/navigation";
 
 const getData = (slug: string) => {
+  if (!fs.existsSync(path.join(path.resolve(__dirname.split(".next")[0]), "/md/works", slug + ".md"))) {
+    return redirect("/404");
+  }
   const markdownWithMeta = fs.readFileSync(path.join(path.resolve(__dirname.split(".next")[0]), "/md/works", slug + ".md"), "utf-8");
 
   const { data: frontmatter, content } = matter(markdownWithMeta);

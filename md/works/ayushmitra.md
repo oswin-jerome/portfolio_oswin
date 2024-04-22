@@ -3,6 +3,7 @@ title: "AyushMitra"
 date: "Apr 10, 2024"
 excerpt: "An appointment booking app for a ayurveda hospital."
 cover_image: "/works/ayuhsmitra_cover.png"
+id: 6
 ---
 
 # AyushMitra

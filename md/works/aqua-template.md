@@ -3,6 +3,7 @@ title: "Aqua Template"
 date: "October 3, 2023"
 excerpt: "Brining a admin template UI inspired from a IG post."
 cover_image: "/works/aqua_cover.jpg"
+id: 0
 ---
 
 # Aqua Template

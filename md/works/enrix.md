@@ -3,6 +3,7 @@ title: "Enrix Property Management"
 date: "March 5, 2021"
 excerpt: "A Property Management System"
 cover_image: "/works/enrix_1.jpg"
+id: 4
 ---
 
 # Enrix Property Management

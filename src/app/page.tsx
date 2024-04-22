@@ -9,6 +9,7 @@ import Served from "@/components/served";
 import SkillSet from "@/components/skillSet";
 import fs from "fs";
 import matter from "gray-matter";
+import { Metadata } from "next";
 import path from "path";
 
 function getData() {
@@ -26,12 +27,28 @@ function getData() {
       frontmatter,
     };
   });
+  posts.sort((a, b) => {
+    if (a.frontmatter.id > b.frontmatter.id) {
+      return -1;
+    }
+    return 1;
+  });
   return {
     props: {
       posts: posts.splice(0, 4),
     },
   };
 }
+
+export const metadata: Metadata = {
+  title: "Oswin Jerome",
+  description: "I'm a Fullstack web & mobile app developer with a wide range of tech skills and experience, Who can design beautify UI and write efficient code, To solve users problems and help them grow their business with tech.",
+  openGraph: {
+    images: ["/oswin.jpg"],
+  },
+
+  keywords: ["Oswin Jerome", "Oswin", "Jerome", "Flutter", "Laravel", "Php", "JavaScript"],
+};
 
 const HomePage = async () => {
   const posts = getData().props.posts;

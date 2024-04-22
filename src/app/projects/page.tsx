@@ -20,6 +20,14 @@ const getData = () => {
     };
   });
   // console.log(works);
+
+  works.sort((a, b) => {
+    if (a.frontmatter.id > b.frontmatter.id) {
+      return -1;
+    }
+    return 1;
+  });
+
   return works;
 };
 
