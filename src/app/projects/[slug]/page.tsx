@@ -54,8 +54,15 @@ export async function generateMetadata({ params, searchParams }: Props, parent: 
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
-    title: frontmatter.title,
+    title: "Project - " + frontmatter.title,
     description: frontmatter.excerpt,
+    authors: [
+      {
+        name: "Oswin",
+        url: "https://oswinjerome.in",
+      },
+    ],
+
     openGraph: {
       images: [frontmatter.cover_image, ...previousImages],
     },
