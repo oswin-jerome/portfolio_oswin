@@ -1,8 +1,9 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 const NavBar = () => {
-  const { pathname } = useRouter();
+  const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
@@ -26,8 +27,11 @@ const NavBar = () => {
     });
   }, []);
 
-  const navClassName = (route: String) => {
+  const navClassName = (route: string) => {
     if (route == pathname) {
+      return "text-accent";
+    }
+    if (route == "/projects" && pathname?.startsWith("/projects")) {
       return "text-accent";
     }
 
@@ -71,13 +75,13 @@ const NavBar = () => {
         <li>
           <Link href="/#about">About</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/blogs" className={navClassName("/blogs")}>
             <>Blogs</>
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link href="/works" className={navClassName("/works")}>
+          <Link href="/projects" className={navClassName("/projects")}>
             <>Projects</>
           </Link>
         </li>

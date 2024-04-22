@@ -6,6 +6,11 @@
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,16 +23,20 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "next-env.d.ts",
     "dec.d.ts",
+    "next-env.d.ts",
+    "env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/blogs/[slug].jsx",
-    "pages/_app.jsx",
-    "pages/_app.jsx"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
