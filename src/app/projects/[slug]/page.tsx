@@ -16,6 +16,27 @@ const getData = (slug: string) => {
   };
 };
 
+export async function generateStaticParams() {
+  const files = fs.readdirSync(path.join(path.resolve(__dirname.split(".next")[0]), "md/works"));
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+
+    const markdownWithMeta = fs.readFileSync(path.join("md/works", filename), "utf-8");
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 const ProjectDetailsPage = ({ params: { slug } }: { params: { slug: string } }) => {
   const {
     frontmatter: { title, date, cover_image, excerpt },
