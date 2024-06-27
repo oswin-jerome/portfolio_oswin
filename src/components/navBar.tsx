@@ -45,6 +45,7 @@ const NavBar = () => {
       </Link>
 
       <button
+        name="Menu"
         onClick={(e) => {
           e.preventDefault();
           setIsOpen(true);

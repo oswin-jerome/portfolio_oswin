@@ -35,12 +35,12 @@ const AppLayout = ({
       </Head>
       <body>
         {children}
-        <footer className="mt-12 h-20 bg-accent">
+        <footer className="mt-12 py-12  bg-accent">
           <p className="text-center pt-3 opacity-100">
-            <span className="opacity-40"> Too lazy to design a footer </span>
+            <span className="opacity-40"> {"// "}is footer necessary? </span>
             <span>👀</span>
           </p>
-          <p className="text-center pt-3 opacity-40 text-sm">© oswinjerome.in, 2021</p>
+          <p className="text-center pt-3 opacity-40 text-sm">© oswinjerome.in, 2024</p>
         </footer>
       </body>
     </html>
