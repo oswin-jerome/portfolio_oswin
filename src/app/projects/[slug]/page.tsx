@@ -82,9 +82,7 @@ const ProjectDetailsPage = ({ params: { slug } }: { params: { slug: string } }) 
 
   return (
     <div>
-      <SeoHead image={cover_image} title={"Project - " + title} description={excerpt} url={`https://oswinjerome.in/projects/${slug}`} />
-
-      <div className="post container mx-auto mt-16 p-8">
+      <div className="post container mx-auto mt-12 p-8">
         {/* <h1 className='text-4xl font-bold mb-5'>{title}</h1> */}
         <div className="markdown prose prose-a:bg-accent prose-a:p-3 prose-a:rounded prose-a:shadow prose-a:no-underline dark:text-white prose-headings:text-accent prose-h1:text-accent dark:prose-a:text-blue-400 max-w-full" dangerouslySetInnerHTML={{ __html: Marked.parse(content) }}></div>
       </div>
