@@ -86,6 +86,11 @@ const NavBar = () => {
             <>Projects</>
           </Link>
         </li>
+        <li>
+          <Link href="/blogs" className={navClassName("/blogs")}>
+            <>Blogs</>
+          </Link>
+        </li>
       </ul>
 
       {
@@ -109,6 +114,11 @@ const NavBar = () => {
             <li>
               <Link passHref href="/works">
                 <p>Projects</p>
+              </Link>
+            </li>
+            <li>
+              <Link passHref href="/blogs">
+                <p>Blogs</p>
               </Link>
             </li>
           </ul>
