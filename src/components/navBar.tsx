@@ -35,6 +35,10 @@ const NavBar = () => {
       return "text-accent";
     }
 
+    if (route == "/blogs" && pathname?.startsWith("/blogs")) {
+      return "text-accent";
+    }
+
     return "";
   };
 
