@@ -2,7 +2,7 @@
 title: "My Home Server and Network Setup"
 date: "Jun 28, 2024"
 excerpt: "Join me as I share insights and experiences from building a network that supports continuous learning and experimentation in the tech world."
-cover_image: "/blogs/journey/me.jpg"
+cover_image: "/blogs/server/server.jpg"
 id: 2
 ---
 

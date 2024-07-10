@@ -8,10 +8,6 @@ id: 1
 
 # My Journey in Tech: From Passion to Proficiency
 
-<div class="">
-    <img class="rounded-lg md:aspect-[16/6] w-full object-cover" src="/blogs/journey/me.jpg"/>
-</div>
-
 Hello, I'm Oswin Jerome, and this is the story of my journey in the world of technology. It all began when I was in the 11th standard, back in 2014. My fascination with coding sparked a relentless drive to learn and create. I embarked on this journey by teaching myself Java, PHP, SQL, and Android Studio. Those early days were filled with the excitement of building my first apps and the joy of seeing them come to life.
 
 ### The College Years: Deepening My Knowledge
