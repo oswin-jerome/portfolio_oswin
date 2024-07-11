@@ -15,7 +15,6 @@ const About = () => {
         Apart from developing applications, I&apos;ve designed websites and applications UI&apos;s with Adobe XD and Figma. Helped people learn and master tools and frameworks.
         <br />
         <br />
-        Currently I&apos;m pursuing my Master&apos;s degree in Computer Applications.
       </p>
     </div>
   );
