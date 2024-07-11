@@ -39,7 +39,7 @@ To further my technical skills, I set up a work server at home, hosting various 
 As I progressed in my Master's program, I discovered a new passion—teaching. I started conducting seminars and workshops, helping students learn coding and understand complex technical concepts. It was incredibly rewarding to see others grow and succeed, and it reinforced my belief in the power of knowledge sharing.
 
 <div class="grid grid-cols-3">
-    <img class="rounded-lg" src="/blogs/journey/workshop.jpg"/>
+    <img class="rounded-lg" src="/blogs/journey/workshop2.png"/>
 </div>
 
 ### Looking Forward: The Road Ahead
