@@ -23,6 +23,11 @@ const AppLayout = ({
 
   gtag('config', 'G-P7E8PSHLW0');`}
       </Script>
+      <Script id="gtag" strategy="beforeInteractive">{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKFDQD4J');`}</Script>
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -42,6 +47,9 @@ const AppLayout = ({
           </p>
           <p className="text-center pt-3 opacity-40 text-sm">© oswinjerome.in, 2024</p>
         </footer>
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKFDQD4J" height="0" width="0" className="hidden"></iframe>
+        </noscript>
       </body>
     </html>
   );
