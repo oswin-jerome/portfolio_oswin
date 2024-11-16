@@ -116,7 +116,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link passHref href="/works">
+              <Link passHref href="/projects">
                 <p>Projects</p>
               </Link>
             </li>
