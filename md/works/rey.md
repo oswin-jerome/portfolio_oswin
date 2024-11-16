@@ -26,4 +26,4 @@ Rey is a startup educational consultancy which helps students to fulfill their d
 ![alt text](/works/rey.png)
 </div>
 
-[Check it out](https://rey.oswinjerome.in)
+<a href="https://rey.oswinjerome.in" rel="nofollow">Check it out</a>
