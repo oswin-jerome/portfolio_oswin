@@ -18,13 +18,13 @@
     "gsap": "^3.9.1",
     "kursor": "^0.1.6",
     "marked": "^4.0.12",
-    "next": "^14.2.2",
+    "next": "15.0.3",
     "next-sitemap": "^3.1.32",
     "notion-page-to-html": "^1.2.0",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-animated-cursor": "^2.7.0",
     "react-cursor": "^2.0.15",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-notion": "^0.10.0"
   },
   "devDependencies": {
@@ -32,12 +32,15 @@
     "@types/animejs": "^3.1.4",
     "@types/marked": "^4.0.2",
     "@types/node": "17.0.18",
-    "@types/react": "17.0.39",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
     "autoprefixer": "^10.4.2",
     "eslint": "8.9.0",
-    "eslint-config-next": "^14.1.0",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.22",
-    "typescript": "4.5.5"
+    "typescript": "^5.6.3"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1"
   }
 }

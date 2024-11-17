@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { redirect } from "next/navigation";
 
-export const getAllBlogs = () => {
+export const getAllBlogs = async () => {
   const files = fs.readdirSync(path.join("md/blogs"));
 
   const blogs = files.map((filename) => {
@@ -30,7 +30,7 @@ export const getAllBlogs = () => {
   return blogs;
 };
 
-export const getBlogFromSlug = (slug: string) => {
+export const getBlogFromSlug = async (slug: string) => {
   if (!fs.existsSync(path.join(path.resolve(__dirname.split(".next")[0]), "/md/blogs", slug + ".md"))) {
     return redirect("/404");
   }
