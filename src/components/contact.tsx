@@ -30,7 +30,7 @@ const Contact = () => {
 
       <div className="grid grid-cols-2  mt-8 lg:mt-28">
         <div className="col-span-2 lg:col-span-1 mt-10">
-          <form action="https://formquack.oswinjerome.in/api/forms/8755805e-86f0-4f83-9bf9-5a4273ac1a2d" method="POST" className="p-0 lg:px-5">
+          <form action="https://formquack.oswinjerome.in/api/forms/22e84585-0c4b-413b-a165-5055bafb6c63" method="POST" className="p-0 lg:px-5">
             <div className="flex flex-col">
               <label htmlFor="name" className="mb-1 font-medium dark:text-white dark:opacity-75">
                 Name
