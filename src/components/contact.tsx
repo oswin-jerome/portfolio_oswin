@@ -61,7 +61,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-2 lg:flex lg:flex-col lg:justify-center gap-8 ">
             {links.map((skill, i) => (
-              <a href={skill.url} key={i} target="_blank" rel="noopener noreferrer">
+              <a data-track-click={"contact_" + skill.handle} href={skill.url} key={i} target="_blank" rel="noopener noreferrer">
                 <div className="relative object-contain cursor-pointer flex gap-5 items-center">
                   <Image width={40} height={40} src={skill.img} alt="sd" />
                   <p className="text-accent">{skill.handle}</p>
