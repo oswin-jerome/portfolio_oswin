@@ -2,9 +2,15 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { analytics } from "open-analytics-sdk";
 const NavBar = () => {
   const pathname = usePathname();
-
+  useEffect(() => {
+    analytics.initTracker({
+      apiKey: "691c82de-bb74-47e3-baef-cd79670d0d97",
+      endpoint: "https://oaapi.oswinjerome.in",
+    });
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -78,7 +84,9 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/#about">About</Link>
+          <Link href="/#about" data-track-click="about">
+            About
+          </Link>
         </li>
         {/* <li>
           <Link href="/blogs" className={navClassName("/blogs")}>
@@ -86,12 +94,12 @@ const NavBar = () => {
           </Link>
         </li> */}
         <li>
-          <Link href="/projects" className={navClassName("/projects")}>
+          <Link href="/projects" data-track-click="projects" className={navClassName("/projects")}>
             <>Projects</>
           </Link>
         </li>
         <li>
-          <Link href="/blogs" className={navClassName("/blogs")}>
+          <Link href="/blogs" data-track-click="blogs" className={navClassName("/blogs")}>
             <>Blogs</>
           </Link>
         </li>
